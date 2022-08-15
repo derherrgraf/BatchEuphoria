@@ -19,7 +19,7 @@ import java.util.concurrent.atomic.AtomicLong
  * object.
  */
 @CompileStatic
-class BEJob<J extends BEJob, JR extends BEJobResult> implements Comparable<BEJob> {
+class BEJob<JR extends BEJobResult> implements Comparable<BEJob> {
 
     public static final String PARM_JOBCREATIONCOUNTER = "JOB_CREATION_COUNTER"
 

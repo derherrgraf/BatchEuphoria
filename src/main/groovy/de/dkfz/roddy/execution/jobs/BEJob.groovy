@@ -190,8 +190,8 @@ class BEJob<JR extends BEJobResult> implements Comparable<BEJob> {
         return [jobManager.convertResourceSet(this)] + processingParameters
     }
 
-    List<J> getParentJobs() {
-        return parentJobs as List<J>
+    List<BEJob> getParentJobs() {
+        return parentJobs as List<BEJob>
     }
 
     static List<BEJob> jobsWithUniqueValidJobId(List<BEJob> jobs) {
